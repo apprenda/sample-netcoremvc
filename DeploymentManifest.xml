@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<appManifest xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.apprenda.com/DeploymentManifest http://apprenda.com/schemas/platform/6.0/DeploymentManifest.xsd" xmlns="http://schemas.apprenda.com/DeploymentManifest">
+  <presentation strategy="CommingledAppRoot" scalingType="Manual"/>
+  <applicationServices stickySessions="False" />
+  <linuxServices>
+    <service name="docker" throttlingPolicy="Small">
+      <customProperties>
+        <customProperty name="DockerDeploy">
+          <values>
+            <propertyValue value="Registry" />
+          </values>
+        </customProperty>
+        <customProperty name="DockerImageName">
+          <values>
+            <propertyValue value="elustgarten/netcoremvc" />
+          </values>
+        </customProperty>
+      </customProperties>
+      <ports>
+        <dynamicPort httpMapped="true" portName="HTTP_8085" />
+      </ports>
+    </service>
+  </linuxServices>
+</appManifest>
