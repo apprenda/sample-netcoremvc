@@ -1,4 +1,4 @@
-# sample-netcoremvc
+# Sample .NET Core MVC Application with docker
 Sample .NET Core MVC Application with docker for deployment to Apprenda
 
 The repository contains basic .NET Core MVC template provided by Microsoft with the addition of a Dockerfile for packaging in a docker container. Additionally, an Apprenda archive is provided if you wish to deploy to an Apprenda environment with docker enabled. 
