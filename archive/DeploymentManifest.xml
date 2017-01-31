@@ -12,7 +12,7 @@
         </customProperty>
         <customProperty name="DockerImageName">
           <values>
-            <propertyValue value="elustgarten/netcoremvc" />
+            <propertyValue value="docker.io/elustgarten/netcoremvc" />
           </values>
         </customProperty>
       </customProperties>
